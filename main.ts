@@ -58,6 +58,12 @@ function _11map () {
     led.unplot(X + 9, Y + 2)
     led.unplot(X + 9, Y + 3)
     led.plotBrightness(X + 9, Y + 4, 10)
+    led.unplot(X + 10, Y - 1)
+    led.unplot(X + 10, Y)
+    led.unplot(X + 10, Y + 1)
+    led.unplot(X + 10, Y + 2)
+    led.unplot(X + 10, Y + 3)
+    led.plotBrightness(X + 10, Y + 4, 10)
 }
 let Coins = 0
 let CoinBlock11A = 0
@@ -86,18 +92,17 @@ Y = 0
 basic.forever(function () {
     _11map()
     led.plotBrightness(OffSet + 2, Jump + (3 + ScreenMoveJump), 200)
-    if (X - OffSet == -4 && Jump == 1) {
-    	
+    if (X - OffSet == -4 && Jump == 1) {	
+    } else if (X - OffSet == -7 && Jump == 1) {
     } else if (input.buttonIsPressed(Button.A) && OffSet > -2) {
         OffSet = OffSet - 1
         basic.pause(200)
     }
-    if (X - OffSet == -2 && Jump == 1) {
-    	
+    if (X - OffSet == -2 && Jump == 1) {	
     } else if (input.buttonIsPressed(Button.B) && OffSet < 0) {
         OffSet = OffSet + 1
         basic.pause(200)
-    } else if (input.buttonIsPressed(Button.B) && X > -5) {
+    } else if (input.buttonIsPressed(Button.B) && X > -6) {
         X = X - 1
         basic.pause(200)
     }
