@@ -299,7 +299,6 @@ function _11map () {
     led.unplot(X + 12, Y + 3)
     led.plotBrightness(X + 12, Y + 4, 10)
     led.unplot(X + 13, Y - 1)
-    led.unplot(X + 13, Y)
     led.unplot(X + 13, Y + 1)
     led.unplot(X + 13, Y + 3)
     led.plotBrightness(X + 13, Y + 4, 10)
@@ -312,17 +311,30 @@ function _11map () {
     led.unplot(X + 15, Y - 1)
     led.unplot(X + 15, Y)
     led.unplot(X + 15, Y + 1)
-    led.unplot(X + 15, Y + 2)
     led.unplot(X + 15, Y + 3)
     led.plotBrightness(X + 15, Y + 4, 10)
+    led.unplot(X + 16, Y - 1)
+    led.unplot(X + 16, Y)
+    led.unplot(X + 16, Y + 1)
+    led.unplot(X + 16, Y + 2)
+    led.unplot(X + 16, Y + 3)
+    led.plotBrightness(X + 16, Y + 4, 10)
+    led.unplot(X + 17, Y - 1)
+    led.unplot(X + 17, Y)
+    led.unplot(X + 17, Y + 1)
+    led.unplot(X + 17, Y + 2)
+    led.unplot(X + 17, Y + 3)
+    led.plotBrightness(X + 17, Y + 4, 10)
 }
 let ScreenMoveJump = 0
+let CoinBlock11C = 0
 let CoinBlock11B = 0
 let CoinBlock11A = 0
 let Jump = 0
 let OffSet = 0
 let Coins = 0
-let CoinBlock11C = 0
+let CoinBlock11D = 0
+let CoinBlock11E = 0
 let Y = 0
 let X = 0
 if (false) {
@@ -344,20 +356,37 @@ let Music = 1
 X = 0
 Y = 0
 basic.forever(function () {
-    if (CoinBlock11C >= 2) {
-        led.plotBrightness(X + 13, Y + 2, 10)
-    } else if (CoinBlock11C > 0) {
+    if (CoinBlock11D >= 2) {
+        led.plotBrightness(X + 13, Y, 10)
+    } else if (CoinBlock11D > 0) {
         Coins = Coins + 1
-        CoinBlock11C = CoinBlock11C + 1
+        CoinBlock11D = CoinBlock11D + 1
     }
 })
 basic.forever(function () {
-    if (X - OffSet == -3 && Jump == -2 || X - OffSet == -9 && Jump == -2 || X - OffSet == -11 && Jump == -2) {
+    if (X - OffSet == -11 && Jump == -4) {
+        if (X - OffSet == -11) {
+            if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
+                Jump = Jump - 1
+                basic.pause(200)
+                Jump = Jump - 1
+                basic.pause(200)
+            }
+        }
+    } else if (X - OffSet == -3 && Jump == -2 || X - OffSet == -9 && Jump == -2 || X - OffSet == -11 && Jump == -2 || X - OffSet == -13 && Jump == -2) {
         if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
-            Jump = Jump - 1
-            basic.pause(200)
-            Jump = Jump - 1
-            basic.pause(200)
+            if (X - OffSet == -11) {
+                CoinBlock11D = CoinBlock11D + 1
+            } else {
+                Jump = Jump - 1
+                basic.pause(200)
+            }
+            if (X - OffSet == -11) {
+                CoinBlock11D = CoinBlock11D + 1
+            } else {
+                Jump = Jump - 1
+                basic.pause(200)
+            }
         }
     } else if (Jump < 0) {
         basic.pause(200)
@@ -369,6 +398,8 @@ basic.forever(function () {
             CoinBlock11B = CoinBlock11B + 1
         } else if (X - OffSet == -11) {
             CoinBlock11C = CoinBlock11C + 1
+        } else if (X - OffSet == -13) {
+            CoinBlock11E = CoinBlock11E + 1
         } else {
             Jump = Jump - 1
             basic.pause(200)
@@ -379,6 +410,8 @@ basic.forever(function () {
             CoinBlock11B = CoinBlock11B + 1
         } else if (X - OffSet == -11 && Jump == 0) {
             CoinBlock11C = CoinBlock11C + 1
+        } else if (X - OffSet == -13) {
+            CoinBlock11E = CoinBlock11E + 1
         } else {
             Jump = Jump - 1
             basic.pause(500)
@@ -480,6 +513,58 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    if (CoinBlock11C == 0) {
+        led.unplot(X + 13, Y + 2)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 13, Y, 100)
+        basic.pause(100)
+    }
+})
+basic.forever(function () {
+    if (CoinBlock11E == 0) {
+        led.unplot(X + 15, Y + 2)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 15, Y + 2, 100)
+        basic.pause(100)
+    }
+})
+basic.forever(function () {
     if (CoinBlock11A >= 2) {
         led.plotBrightness(X + 5, Y + 2, 10)
     } else if (CoinBlock11A > 0) {
@@ -499,7 +584,7 @@ basic.forever(function () {
     } else if (input.buttonIsPressed(Button.B) && OffSet < 0) {
         OffSet = OffSet + 1
         basic.pause(200)
-    } else if (input.buttonIsPressed(Button.B) && X > -11) {
+    } else if (input.buttonIsPressed(Button.B) && X > -13) {
         X = X - 1
         basic.pause(200)
     }
@@ -510,5 +595,21 @@ basic.forever(function () {
     } else if (CoinBlock11B > 0) {
         Coins = Coins + 1
         CoinBlock11B = CoinBlock11B + 1
+    }
+})
+basic.forever(function () {
+    if (CoinBlock11C >= 2) {
+        led.plotBrightness(X + 13, Y + 2, 10)
+    } else if (CoinBlock11C > 0) {
+        Coins = Coins + 1
+        CoinBlock11C = CoinBlock11C + 1
+    }
+})
+basic.forever(function () {
+    if (CoinBlock11E >= 2) {
+        led.plotBrightness(X + 15, Y + 2, 10)
+    } else if (CoinBlock11E > 0) {
+        Coins = Coins + 1
+        CoinBlock11E = CoinBlock11E + 1
     }
 })
