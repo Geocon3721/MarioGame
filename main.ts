@@ -325,6 +325,102 @@ function _11map () {
     led.unplot(X + 17, Y + 2)
     led.unplot(X + 17, Y + 3)
     led.plotBrightness(X + 17, Y + 4, 10)
+    led.unplot(X + 18, Y - 1)
+    led.unplot(X + 18, Y)
+    led.unplot(X + 18, Y + 1)
+    led.unplot(X + 18, Y + 2)
+    led.plotBrightness(X + 18, Y + 3, 50)
+    led.plotBrightness(X + 18, Y + 4, 50)
+    led.unplot(X + 19, Y - 1)
+    led.unplot(X + 19, Y)
+    led.unplot(X + 19, Y + 1)
+    led.unplot(X + 19, Y + 2)
+    led.unplot(X + 19, Y + 3)
+    led.plotBrightness(X + 19, Y + 4, 10)
+    led.unplot(X + 20, Y - 1)
+    led.unplot(X + 20, Y)
+    led.unplot(X + 20, Y + 1)
+    led.unplot(X + 20, Y + 2)
+    led.unplot(X + 20, Y + 3)
+    led.plotBrightness(X + 20, Y + 4, 10)
+    led.unplot(X + 21, Y - 1)
+    led.unplot(X + 21, Y)
+    led.unplot(X + 21, Y + 1)
+    led.unplot(X + 21, Y + 2)
+    led.unplot(X + 21, Y + 3)
+    led.plotBrightness(X + 21, Y + 4, 10)
+    led.unplot(X + 22, Y - 1)
+    led.unplot(X + 22, Y)
+    led.unplot(X + 22, Y + 1)
+    led.plotBrightness(X + 22, Y + 2, 50)
+    led.plotBrightness(X + 22, Y + 3, 50)
+    led.plotBrightness(X + 22, Y + 4, 50)
+    led.unplot(X + 23, Y - 1)
+    led.unplot(X + 23, Y)
+    led.unplot(X + 23, Y + 1)
+    led.unplot(X + 23, Y + 2)
+    led.unplot(X + 23, Y + 3)
+    led.plotBrightness(X + 23, Y + 4, 10)
+    led.unplot(X + 24, Y - 1)
+    led.unplot(X + 24, Y)
+    led.unplot(X + 24, Y + 1)
+    led.unplot(X + 24, Y + 2)
+    led.unplot(X + 24, Y + 3)
+    led.plotBrightness(X + 24, Y + 4, 10)
+    led.unplot(X + 25, Y - 1)
+    led.unplot(X + 25, Y)
+    led.unplot(X + 25, Y + 1)
+    led.unplot(X + 25, Y + 2)
+    led.unplot(X + 25, Y + 3)
+    led.plotBrightness(X + 25, Y + 4, 10)
+    led.unplot(X + 26, Y - 1)
+    led.unplot(X + 26, Y)
+    led.unplot(X + 26, Y + 1)
+    led.plotBrightness(X + 26, Y + 2, 50)
+    led.plotBrightness(X + 26, Y + 3, 50)
+    led.plotBrightness(X + 26, Y + 4, 50)
+    led.unplot(X + 27, Y - 1)
+    led.unplot(X + 27, Y)
+    led.unplot(X + 27, Y + 1)
+    led.unplot(X + 27, Y + 2)
+    led.unplot(X + 27, Y + 3)
+    led.plotBrightness(X + 27, Y + 4, 10)
+    led.unplot(X + 28, Y - 1)
+    led.unplot(X + 28, Y)
+    led.unplot(X + 28, Y + 1)
+    led.unplot(X + 28, Y + 2)
+    led.unplot(X + 28, Y + 3)
+    led.plotBrightness(X + 28, Y + 4, 10)
+    led.unplot(X + 29, Y - 1)
+    led.unplot(X + 29, Y)
+    led.unplot(X + 29, Y + 1)
+    led.unplot(X + 29, Y + 2)
+    led.unplot(X + 29, Y + 3)
+    led.plotBrightness(X + 29, Y + 4, 10)
+    led.unplot(X + 30, Y - 1)
+    led.unplot(X + 30, Y)
+    led.unplot(X + 30, Y + 1)
+    led.unplot(X + 30, Y + 2)
+    led.unplot(X + 30, Y + 3)
+    led.unplot(X + 30, Y + 4)
+    led.unplot(X + 31, Y - 1)
+    led.unplot(X + 31, Y)
+    led.unplot(X + 31, Y + 1)
+    led.unplot(X + 31, Y + 2)
+    led.unplot(X + 31, Y + 3)
+    led.plotBrightness(X + 31, Y + 4, 10)
+    led.unplot(X + 32, Y - 1)
+    led.unplot(X + 32, Y)
+    led.unplot(X + 32, Y + 1)
+    led.unplot(X + 32, Y + 2)
+    led.unplot(X + 32, Y + 3)
+    led.plotBrightness(X + 32, Y + 4, 10)
+    led.unplot(X + 33, Y - 1)
+    led.unplot(X + 33, Y)
+    led.unplot(X + 33, Y + 1)
+    led.unplot(X + 33, Y + 2)
+    led.unplot(X + 33, Y + 3)
+    led.plotBrightness(X + 33, Y + 4, 10)
 }
 let ScreenMoveJump = 0
 let CoinBlock11C = 0
@@ -363,58 +459,68 @@ basic.forever(function () {
         CoinBlock11D = CoinBlock11D + 1
     }
 })
+//Jump
 basic.forever(function () {
-    if (X - OffSet == -11 && Jump == -4) {
-        if (X - OffSet == -11) {
+    if (true) {
+        if (X - OffSet == -11 && Jump == -4) {
+            if (X - OffSet == -11) {
+                if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
+                    Jump = Jump - 1
+                    basic.pause(200)
+                    Jump = Jump - 1
+                    basic.pause(200)
+                }
+            }
+        } else if (X - OffSet == -3 && Jump == -2 || X - OffSet == -9 && Jump == -2 || X - OffSet == -11 && Jump == -2 || X - OffSet == -13 && Jump == -2 || X - OffSet == -20 && Jump == -2 || X - OffSet == -24 && Jump == -2) {
+            if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
+                if (X - OffSet == -11) {
+                    CoinBlock11D = CoinBlock11D + 1
+                } else {
+                    Jump = Jump - 1
+                    basic.pause(200)
+                }
+                if (X - OffSet == -11) {
+                    CoinBlock11D = CoinBlock11D + 1
+                } else {
+                    Jump = Jump - 1
+                    basic.pause(200)
+                }
+            }
+        } else if (X - OffSet == -16 && Jump == -1) {
             if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
                 Jump = Jump - 1
                 basic.pause(200)
                 Jump = Jump - 1
                 basic.pause(200)
             }
-        }
-    } else if (X - OffSet == -3 && Jump == -2 || X - OffSet == -9 && Jump == -2 || X - OffSet == -11 && Jump == -2 || X - OffSet == -13 && Jump == -2) {
-        if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
-            if (X - OffSet == -11) {
-                CoinBlock11D = CoinBlock11D + 1
-            } else {
-                Jump = Jump - 1
-                basic.pause(200)
-            }
-            if (X - OffSet == -11) {
-                CoinBlock11D = CoinBlock11D + 1
-            } else {
-                Jump = Jump - 1
-                basic.pause(200)
-            }
-        }
-    } else if (Jump < 0) {
-        basic.pause(200)
-        Jump = Jump + 1
-    } else if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
-        if (X - OffSet == -3) {
-            CoinBlock11A = CoinBlock11A + 1
-        } else if (X - OffSet == -9) {
-            CoinBlock11B = CoinBlock11B + 1
-        } else if (X - OffSet == -11) {
-            CoinBlock11C = CoinBlock11C + 1
-        } else if (X - OffSet == -13) {
-            CoinBlock11E = CoinBlock11E + 1
-        } else {
-            Jump = Jump - 1
+        } else if (Jump < 0) {
             basic.pause(200)
-        }
-        if (X - OffSet == -3 && Jump == 0) {
-            CoinBlock11A = CoinBlock11A + 1
-        } else if (X - OffSet == -9 && Jump == 0) {
-            CoinBlock11B = CoinBlock11B + 1
-        } else if (X - OffSet == -11 && Jump == 0) {
-            CoinBlock11C = CoinBlock11C + 1
-        } else if (X - OffSet == -13) {
-            CoinBlock11E = CoinBlock11E + 1
-        } else {
-            Jump = Jump - 1
-            basic.pause(500)
+            Jump = Jump + 1
+        } else if (input.isGesture(Gesture.ScreenUp) || input.isGesture(Gesture.Shake)) {
+            if (X - OffSet == -3) {
+                CoinBlock11A = CoinBlock11A + 1
+            } else if (X - OffSet == -9) {
+                CoinBlock11B = CoinBlock11B + 1
+            } else if (X - OffSet == -11) {
+                CoinBlock11C = CoinBlock11C + 1
+            } else if (X - OffSet == -13) {
+                CoinBlock11E = CoinBlock11E + 1
+            } else {
+                Jump = Jump - 1
+                basic.pause(200)
+            }
+            if (X - OffSet == -3 && Jump == 0) {
+                CoinBlock11A = CoinBlock11A + 1
+            } else if (X - OffSet == -9 && Jump == 0) {
+                CoinBlock11B = CoinBlock11B + 1
+            } else if (X - OffSet == -11 && Jump == 0) {
+                CoinBlock11C = CoinBlock11C + 1
+            } else if (X - OffSet == -13) {
+                CoinBlock11E = CoinBlock11E + 1
+            } else {
+                Jump = Jump - 1
+                basic.pause(500)
+            }
         }
     }
 })
@@ -572,21 +678,24 @@ basic.forever(function () {
         CoinBlock11A = CoinBlock11A + 1
     }
 })
+//Movement
 basic.forever(function () {
     _11map()
-    led.plotBrightness(OffSet + 2, Jump + (3 + ScreenMoveJump), 200)
-    if (input.buttonIsPressed(Button.A) && OffSet > -2) {
-        OffSet = OffSet - 1
-        basic.pause(200)
-    }
-    if (X - OffSet == -2 && Jump == 1) {
-    	
-    } else if (input.buttonIsPressed(Button.B) && OffSet < 0) {
-        OffSet = OffSet + 1
-        basic.pause(200)
-    } else if (input.buttonIsPressed(Button.B) && X > -13) {
-        X = X - 1
-        basic.pause(200)
+    if (Jump < 2) {
+        led.plotBrightness(OffSet + 2, Jump + (3 + ScreenMoveJump), 200)
+        if (X - OffSet == -17 && Jump == 0 || X - OffSet == -21 && Jump == 0 || X - OffSet == -21 && Jump == -1 || X - OffSet == -25 && Jump == 0 || X - OffSet == -25 && Jump == -1) {
+        } else if (input.buttonIsPressed(Button.A) && OffSet > -2) {
+            OffSet = OffSet - 1
+            basic.pause(200)
+        }
+        if (X - OffSet == -15 && Jump == 0 || X - OffSet == -19 && Jump == 0 || X - OffSet == -19 && Jump == -1 || X - OffSet == -23 && Jump == 0 || X - OffSet == -23 && Jump == -1) {
+        } else if (input.buttonIsPressed(Button.B) && OffSet < 0) {
+            OffSet = OffSet + 1
+            basic.pause(200)
+        } else if (input.buttonIsPressed(Button.B) && X > -29) {
+            X = X - 1
+            basic.pause(200)
+        }
     }
 })
 basic.forever(function () {
@@ -611,5 +720,27 @@ basic.forever(function () {
     } else if (CoinBlock11E > 0) {
         Coins = Coins + 1
         CoinBlock11E = CoinBlock11E + 1
+    }
+})
+//Collisions
+basic.forever(function () {
+    if (true) {
+        if (X - OffSet == -11 && Jump == -3) {
+            Jump = -4
+        } else if (X - OffSet == -3 && Jump == -1 || X - OffSet == -9 && Jump == -1 || X - OffSet == -11 && Jump == -1 || X - OffSet == -13 && Jump == -1|| X - OffSet == -20 && Jump == -1 || X - OffSet == -24 && Jump == -1) {
+            Jump = -2
+        } else if (X - OffSet == -16 && Jump == 0) {
+            if (X - OffSet == -16) {
+                Jump = -1
+            } else if (X - OffSet == -20 || X - OffSet == -24) {
+                Jump = -2
+            }
+        }
+    }
+})
+basic.forever(function () {
+    if (X - OffSet == -28 && Jump > -1) {
+        basic.pause(200)
+        Jump = Jump + 1
     }
 })
