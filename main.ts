@@ -1,225 +1,672 @@
 function normalMusic1 () {
-    music.setTempo(105)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(466, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(880, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(466, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(880, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Whole))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(622, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(622, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Whole))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Eighth))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Quarter))
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
-    music.rest(music.beat(BeatFraction.Half))
-    music.rest(music.beat(BeatFraction.Quarter))
+    if (Dead == false) {
+        music.setTempo(105)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(330, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(466, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(880, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(330, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(466, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(880, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(494, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Whole))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {   
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(622, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Whole))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(1046, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Whole))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(784, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {   
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(622, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Whole))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {   
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Eighth))
+    }
+    if (Dead == false) {   
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Half))
+    }
+    if (Dead == false) {    
+        music.rest(music.beat(BeatFraction.Quarter))
+    }
+}
+function deadMusic1 () {
+
 }
 function _11map () {
     led.unplot(X, Y - 1)
@@ -433,6 +880,7 @@ let CoinBlock11D = 0
 let CoinBlock11E = 0
 let Y = 0
 let X = 0
+let Dead = true
 if (false) {
     basic.showString("Press A To Go Left")
     basic.pause(200)
@@ -560,9 +1008,13 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (true) {
+    if (Dead == false) {
         if (Music == 1) {
             normalMusic1()
+        }
+    } else if (Dead == true) {
+        if (Music == 1) {
+            deadMusic1()
         }
     }
 })
