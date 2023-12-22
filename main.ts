@@ -665,8 +665,38 @@ function normalMusic1 () {
         music.rest(music.beat(BeatFraction.Quarter))
     }
 }
-function deadMusic1 () {
-
+function deadMusic1() {
+    if (Stop == false) {
+        music.setTempo(120)
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.play(music.tonePlayable(415, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.play(music.tonePlayable(440, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.rest(music.beat(BeatFraction.Half))
+        music.rest(music.beat(BeatFraction.Whole))
+        music.setTempo(100)
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.play(music.tonePlayable(698, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(659, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(587, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.play(music.tonePlayable(523, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        music.play(music.tonePlayable(392, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Eighth)), music.PlaybackMode.UntilDone)
+        music.rest(music.beat(BeatFraction.Quarter))
+        Stop = true
+    }
 }
 function _11map () {
     led.unplot(X, Y - 1)
@@ -880,7 +910,8 @@ let CoinBlock11D = 0
 let CoinBlock11E = 0
 let Y = 0
 let X = 0
-let Dead = true
+let Dead = false
+let Stop = false
 if (false) {
     basic.showString("Press A To Go Left")
     basic.pause(200)
@@ -1194,5 +1225,10 @@ basic.forever(function () {
     if (X - OffSet == -28 && Jump > -1) {
         basic.pause(200)
         Jump = Jump + 1
+    }
+})
+basic.forever(function () {
+    if (Jump == 1) {
+        Dead = true
     }
 })
