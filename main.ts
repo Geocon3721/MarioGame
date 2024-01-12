@@ -1053,6 +1053,95 @@ function _11map () {
     led.unplot(X + 46, Y + 2)
     led.unplot(X + 46, Y + 3)
     led.plotBrightness(X + 46, Y + 4, 10)
+    led.unplot(X + 34, Y - 1)
+    led.unplot(X + 34, Y)
+    led.unplot(X + 34, Y + 1)
+    led.unplot(X + 34, Y + 2)
+    led.unplot(X + 34, Y + 3)
+    led.unplot(X + 34, Y + 4)
+    led.unplot(X + 35, Y - 1)
+    led.unplot(X + 35, Y)
+    led.unplot(X + 35, Y + 1)
+    led.unplot(X + 35, Y + 2)
+    led.unplot(X + 35, Y + 3)
+    led.unplot(X + 35, Y + 4)
+    led.unplot(X + 36, Y - 1)
+    led.unplot(X + 36, Y)
+    led.unplot(X + 36, Y + 1)
+    led.unplot(X + 36, Y + 2)
+    led.unplot(X + 36, Y + 3)
+    led.plotBrightness(X + 36, Y + 4, 10)
+    led.unplot(X + 37, Y - 1)
+    led.unplot(X + 37, Y)
+    led.unplot(X + 37, Y + 1)
+    led.unplot(X + 37, Y + 2)
+    led.unplot(X + 37, Y + 3)
+    led.plotBrightness(X + 37, Y + 4, 10)
+    led.unplot(X + 38, Y - 1)
+    led.unplot(X + 38, Y)
+    led.unplot(X + 38, Y + 1)
+    led.unplot(X + 38, Y + 2)
+    led.unplot(X + 38, Y + 3)
+    led.plotBrightness(X + 38, Y + 4, 10)
+    led.unplot(X + 39, Y - 1)
+    led.unplot(X + 39, Y)
+    led.unplot(X + 39, Y + 1)
+    led.unplot(X + 39, Y + 2)
+    led.plotBrightness(X + 39, Y + 3, 10)
+    led.plotBrightness(X + 39, Y + 4, 10)
+    led.unplot(X + 40, Y - 1)
+    led.unplot(X + 40, Y)
+    led.unplot(X + 40, Y + 1)
+    led.plotBrightness(X + 40, Y + 2, 10)
+    led.plotBrightness(X + 40, Y + 3, 10)
+    led.plotBrightness(X + 40, Y + 4, 10)
+    led.unplot(X + 41, Y - 1)
+    led.unplot(X + 41, Y)
+    led.unplot(X + 41, Y + 1)
+    led.unplot(X + 41, Y + 2)
+    led.unplot(X + 41, Y + 3)
+    led.unplot(X + 41, Y + 4)
+    led.unplot(X + 42, Y - 1)
+    led.unplot(X + 42, Y)
+    led.unplot(X + 42, Y + 1)
+    led.plotBrightness(X + 42, Y + 2, 10)
+    led.plotBrightness(X + 42, Y + 3, 10)
+    led.plotBrightness(X + 42, Y + 4, 10)
+    led.unplot(X + 43, Y - 1)
+    led.unplot(X + 43, Y)
+    led.unplot(X + 43, Y + 1)
+    led.unplot(X + 43, Y + 2)
+    led.plotBrightness(X + 43, Y + 3, 10)
+    led.plotBrightness(X + 43, Y + 4, 10)
+    led.unplot(X + 44, Y - 1)
+    led.unplot(X + 44, Y)
+    led.unplot(X + 44, Y + 1)
+    led.unplot(X + 44, Y + 2)
+    led.unplot(X + 44, Y + 3)
+    led.plotBrightness(X + 44, Y + 4, 10)
+    led.unplot(X + 45, Y - 1)
+    led.unplot(X + 45, Y)
+    led.unplot(X + 45, Y + 1)
+    led.unplot(X + 45, Y + 2)
+    led.unplot(X + 45, Y + 3)
+    led.plotBrightness(X + 45, Y + 4, 10)
+    led.unplot(X + 46, Y - 1)
+    led.unplot(X + 46, Y)
+    led.unplot(X + 46, Y + 1)
+    led.unplot(X + 46, Y + 3)
+    led.plotBrightness(X + 46, Y + 4, 10)
+    led.unplot(X + 47, Y - 1)
+    led.unplot(X + 47, Y)
+    led.unplot(X + 47, Y + 1)
+    led.unplot(X + 47, Y + 2)
+    led.unplot(X + 47, Y + 3)
+    led.plotBrightness(X + 47, Y + 4, 10)
+    led.unplot(X + 48, Y - 1)
+    led.unplot(X + 48, Y)
+    led.unplot(X + 48, Y + 1)
+    led.unplot(X + 48, Y + 2)
+    led.unplot(X + 48, Y + 3)
+    led.plotBrightness(X + 48, Y + 4, 10)
 }
 let ScreenMoveJump = 0
 let CoinBlock11C = 0
@@ -1092,6 +1181,40 @@ basic.forever(function () {
     } else if (CoinBlock11D > 0) {
         Coins = Coins + 1
         CoinBlock11D = CoinBlock11D + 1
+    }
+})
+basic.forever(function () {
+    if (CoinBlock11F >= 2) {
+        led.plotBrightness(X + 46, Y + 2, 10)
+    } else if (CoinBlock11F > 0) {
+        Coins = Coins + 1
+        CoinBlock11F = CoinBlock11F + 1
+    }
+})
+basic.forever(function () {
+    if (CoinBlock11F == 0) {
+        led.unplot(X + 46, Y + 2)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
+        led.plotBrightness(X + 46, Y + 2, 100)
+        basic.pause(100)
     }
 })
 basic.forever(function () {
@@ -1176,7 +1299,9 @@ basic.forever(function () {
             } else if (X - OffSet == -11) {
                 CoinBlock11C = CoinBlock11C + 1
             } else if (X - OffSet == -13) {
-                CoinBlock11E = CoinBlock11E + 1
+               CoinBlock11E = CoinBlock11E + 1
+            } else if (X - OffSet == -44) {
+                CoinBlock11F = CoinBlock11F + 1
             } else {
                 Jump = Jump - 1
                 basic.pause(200)
@@ -1189,6 +1314,8 @@ basic.forever(function () {
                 CoinBlock11C = CoinBlock11C + 1
             } else if (X - OffSet == -13) {
                 CoinBlock11E = CoinBlock11E + 1
+            } else if (X - OffSet == -44) {
+                CoinBlock11F = CoinBlock11F + 1
             } else {
                 Jump = Jump - 1
                 basic.pause(500)
@@ -1368,7 +1495,7 @@ basic.forever(function () {
         } else if (input.buttonIsPressed(Button.B) && OffSet < 0) {
             OffSet = OffSet + 1
             basic.pause(200)
-        } else if (input.buttonIsPressed(Button.B) && X > -42) {
+        } else if (input.buttonIsPressed(Button.B) && X > -44) {
             X = X - 1
             basic.pause(200)
         }
